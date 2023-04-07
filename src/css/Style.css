@@ -6,13 +6,19 @@
   --Outfit:"Outfit"
 }
 
-body {
-  font-size: 15px;
-  font-family: var(--Outfit);
+* {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  
 }
+
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--Outfit);
+  }
 
 .container {
   width: 100vw;
@@ -35,20 +41,29 @@ body {
 }
 
 .card_image {
+  max-width: 100%;
   width: 290px;
   border-radius: 0.8em;
 }
 
 .card__title {
+  font-size: 15px;
+  color:hsl(218, 44%, 22%);
   font-weight: 700;
   text-align: center;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  margin-top: 1.5rem;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 
 .card__description {
+  font-size:  15px;
+  color: var(--Grayish-blue);
+  font-size: 0.9375rem;
   font-weight: 400;
   text-align: center;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 30px;
 }
